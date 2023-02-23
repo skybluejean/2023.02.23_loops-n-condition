@@ -23,14 +23,34 @@
 <script>
   //변수때문에 'root'를 사용한다. 구별하기 위해서
   let menu = window.document.getElementById('menu');
-  console.dir(menu);
-  console.log(menu.children);
+  console.dir(menu); //구조를 먼저 보는것이 중요
+  console.log(menu.children); //배열
   console.log(menu.children[0]); 
   /*
   let menu2 = document.getElementsByTagName("ul");
   console.log(menu2);
   console.dir(menu2);
   */
+  console.dir(menu.children[0].style);
+  for(let i = 0; i < menu.children.length; i++){
+    menu.children[i].style.color = "skyblue";
+    if(menu.children[i].textContent === "items-3"){
+      menu.children[i].style.color = "violet";
+    }//else if(menu.children[i].textContent===items-2 && menu.children[i].textContent===items-4){
+      //menu.children[i].style.color = "lemonchiffon";
+   // }
+    else{
+      menu.children[i].style.color = "darkgray";
+    }
+  }
+
+  for(let i = 0; i < menu.children.length; i++){
+  if(i === 2){
+    menu.children[i].style.color = "redvelvet";
+  }
+    }
+
+
 </script>
 </body>
 </html>
