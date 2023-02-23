@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+
+<body>
+  <ul id="menu">
+    <li>items-1</li>
+    <li>items-2</li>
+    <li>items-3</li>
+    <li>items-4</li>
+    <li>items-5</li>
+  </ul>
+  <ul></ul>
+  <ul></ul>
+  <ul></ul>
+<script>
+  //변수때문에 'root'를 사용한다. 구별하기 위해서
+  let menu = window.document.getElementById('menu');
+  console.dir(menu);
+  console.log(menu.children);
+  console.log(menu.children[0]); 
+  /*
+  let menu2 = document.getElementsByTagName("ul");
+  console.log(menu2);
+  console.dir(menu2);
+  */
+</script>
+</body>
+</html>
